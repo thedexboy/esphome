@@ -35,7 +35,7 @@ void SNTPComponent::setup() {
 
 #ifdef ARDUINO_ARCH_ESP8266
   // let localtime/gmtime handle timezones, not sntp
-  sntp_set_timezone(0);
+  // sntp_set_timezone(0);
 #endif
   sntp_init();
 }
